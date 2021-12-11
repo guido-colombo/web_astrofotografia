@@ -1,0 +1,14 @@
+.tituloContacto {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.formularioContacto {
+    width: 600px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .formularioContacto {
+        max-width: 300px;
+    }
+}

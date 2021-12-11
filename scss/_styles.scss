@@ -1,0 +1,98 @@
+/* columnas index y tienda*/
+
+.espacioColumnas {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* seccion nosotros*/ 
+
+.nosotros {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Carousel */
+.slide {
+    margin-top: 10px;
+
+}
+
+.slide img {
+    height: 40vh;
+    object-fit: cover;
+}
+
+/* seccion ecommerce */
+
+.seccion--venta {
+    height: 100px;
+    
+}
+
+.precio {
+    font-size: 25px;
+    
+}
+
+/* textos*/
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 40px;
+    text-align: center;
+}
+h4 {
+    font-size: 25px;
+}
+
+p {
+   text-align: center;
+  font-size: 20px;
+}
+.tituloPrincipal {
+    color: #718799;
+    margin-top: 100px;
+    background-color: #c8cccf;
+    text-align: center;
+    margin-bottom: 50px; }
+
+
+.tituloSecundario {
+    color: #718799;
+    margin-top: 100px;
+    background-color: #c8cccf;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.TituloSeccionImagen {
+        margin: 20px 0 20px 0;
+}
+
+.parrafoTienda {
+
+    padding-bottom: 30px;
+}
+
+/* seccion Nosotros*/
+.textoNosotros {
+    color: black;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* seccion imagenes */
+.parrafoImagenes {
+    font-size: 30px;
+}
+
+/* nav */
+.navbar-nav > li > .dropdown-menu {     background-color: #c8cccf;  }

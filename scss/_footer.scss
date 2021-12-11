@@ -1,0 +1,25 @@
+/* footer*/
+footer {
+    background-image: linear-gradient(to right, grey, black);
+    background-color: grey;
+    height: 50px;
+    
+}
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.parrafoFooter {
+    margin: 15px;
+    text-align: left;
+    flex-grow: 1;
+}
+.redes {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+.redesContacto {
+    padding-right: 10px;
+}

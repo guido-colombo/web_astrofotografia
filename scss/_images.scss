@@ -1,0 +1,240 @@
+
+/* seccion index y tienda*/
+.imagenTitulo {
+    width: 100%;
+    
+    
+}
+
+
+/* seccion Nosotros*/
+.imagenNosotros {
+    height: 30%;
+    width: 30%;
+    margin-left: 10px;
+    
+}
+
+
+/* seccion Imagenes */ 
+
+.galleryPlanetas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+ 
+}
+.enlaceImagen {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+.seccionImagenes {
+    padding-top: 2em;
+    padding-bottom: 10em;
+    margin: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    
+}
+
+@media only screen and (max-width: 768px){
+    .seccionImagenes {
+        padding-top: 2em;
+        padding-bottom: 5em;
+        margin: 2em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+}
+
+/*seccion Lunar Solar */
+.galleryPicture{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.light-box img {
+    width: 50vw;
+    max-height: 100vh;
+}
+.light-box:target {
+    transform: scale(1);
+}
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: rgb(185, 78, 78);
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.next {
+    display: block;
+    background-color: rgb(185, 78, 78);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.galleryPicture a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+    transition: transform 0.5s;
+}
+.galleryPicture:hover::before{
+    transform: translate(0);
+
+}
+
+.gallery {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-areas: 
+    "img1 img2 img3 img3" 
+    "img1 img2 img3 img3" 
+    "img4 img4 img3 img3" 
+    "img4 img4 img5 img5"
+    "img4 img4 img5 img5"
+    "img7 img7 img5 img5"
+    "img7 img7 img6 img6"
+    "img7 img7 img6 img6"
+    "img8 img8 img6 img6"
+    "img8 img8 img6 img6"
+    "img8 img8 img6 img6";
+    gap: .8em;
+}
+@media only screen and (max-width: 768px){
+    .gallery {
+        padding-bottom: 1em;
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "img1" 
+        "img1"
+        "img1"
+        "img2"
+        "img2"
+        "img2"
+        "img3"
+        "img3"
+        "img3" 
+        "img4"
+        "img4"
+        "img5"
+        "img5"
+        "img6"
+        "img6"
+        "img6"
+        "img7"
+        "img7"
+        "img8"
+        "img8"
+        "img8";
+        gap: .1em;
+    }
+    .galleryPicture a:hover img {
+        filter: blur(2px);
+        transform: none;
+        transition: transform 0.5s;
+    }
+   
+}
+@media only screen and (max-width: 480px){
+    .gallery {
+        padding-bottom: 1em;
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "img1" 
+        "img2"
+        "img3" 
+        "img3"
+        "img4"
+        "img4"
+        "img5"
+        "img5"
+        "img6"
+        "img6"
+        "img7"
+        "img7"
+        "img8"
+        "img8";
+        gap: .1em;
+    }
+
+}
+.galleryPicture__medida {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galleryPictureN1 {
+    grid-area: img1;
+}
+.galleryPictureN2{
+    grid-area: img2;
+}
+.galleryPictureN3 {
+    grid-area: img3;
+}
+.galleryPictureN4 {
+    grid-area: img4;
+}
+.galleryPictureN5 {
+    grid-area: img5;
+}
+.galleryPictureN6 {
+    grid-area: img6;
+}
+.galleryPictureN7 {
+    grid-area: img7;
+}
+.galleryPictureN8 {
+    grid-area: img8;
+}
+.tituloGaleriaLunar {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}

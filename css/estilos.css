@@ -1,0 +1,365 @@
+/* columnas index y tienda*/
+.espacioColumnas {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+/* seccion nosotros*/
+.nosotros {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+/* Carousel */
+.slide {
+  margin-top: 10px; }
+
+.slide img {
+  height: 40vh;
+  object-fit: cover; }
+
+/* seccion ecommerce */
+.seccion--venta {
+  height: 100px; }
+
+.precio {
+  font-size: 25px; }
+
+/* textos*/
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+h3 {
+  font-size: 40px;
+  text-align: center; }
+
+h4 {
+  font-size: 25px; }
+
+p {
+  text-align: center;
+  font-size: 20px; }
+
+.tituloPrincipal {
+  color: #718799;
+  margin-top: 100px;
+  background-color: #c8cccf;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.tituloSecundario {
+  color: #718799;
+  margin-top: 100px;
+  background-color: #c8cccf;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.TituloSeccionImagen {
+  margin: 20px 0 20px 0; }
+
+.parrafoTienda {
+  padding-bottom: 30px; }
+
+/* seccion Nosotros*/
+.textoNosotros {
+  color: black;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+/* seccion imagenes */
+.parrafoImagenes {
+  font-size: 30px; }
+
+/* nav */
+.navbar-nav > li > .dropdown-menu {
+  background-color: #c8cccf; }
+
+/* seccion index y tienda*/
+.imagenTitulo {
+  width: 100%; }
+
+/* seccion Nosotros*/
+.imagenNosotros {
+  height: 30%;
+  width: 30%;
+  margin-left: 10px; }
+
+/* seccion Imagenes */
+.galleryPlanetas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.enlaceImagen {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; }
+
+.seccionImagenes {
+  padding-top: 2em;
+  padding-bottom: 10em;
+  margin: 5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em; }
+
+@media only screen and (max-width: 768px) {
+  .seccionImagenes {
+    padding-top: 2em;
+    padding-bottom: 5em;
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }
+
+/*seccion Lunar Solar */
+.galleryPicture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; }
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform .3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0); }
+
+.light-box img {
+  width: 50vw;
+  max-height: 100vh; }
+
+.light-box:target {
+  transform: scale(1); }
+
+.close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: #b94e4e;
+  color: #fff;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 30px; }
+
+.next {
+  display: block;
+  background-color: #b94e4e;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 10px; }
+
+.galleryPicture a:hover img {
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3);
+  transition: transform 0.5s; }
+
+.galleryPicture:hover::before {
+  transform: translate(0); }
+
+.gallery {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  grid-template-areas: "img1 img2 img3 img3"  "img1 img2 img3 img3"  "img4 img4 img3 img3"  "img4 img4 img5 img5" "img4 img4 img5 img5" "img7 img7 img5 img5" "img7 img7 img6 img6" "img7 img7 img6 img6" "img8 img8 img6 img6" "img8 img8 img6 img6" "img8 img8 img6 img6";
+  gap: .8em; }
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-areas: "img1"  "img1" "img1" "img2" "img2" "img2" "img3" "img3" "img3"  "img4" "img4" "img5" "img5" "img6" "img6" "img6" "img7" "img7" "img8" "img8" "img8";
+    gap: .1em; }
+  .galleryPicture a:hover img {
+    filter: blur(2px);
+    transform: none;
+    transition: transform 0.5s; } }
+
+@media only screen and (max-width: 480px) {
+  .gallery {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-areas: "img1"  "img2" "img3"  "img3" "img4" "img4" "img5" "img5" "img6" "img6" "img7" "img7" "img8" "img8";
+    gap: .1em; } }
+
+.galleryPicture__medida {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.galleryPictureN1 {
+  grid-area: img1; }
+
+.galleryPictureN2 {
+  grid-area: img2; }
+
+.galleryPictureN3 {
+  grid-area: img3; }
+
+.galleryPictureN4 {
+  grid-area: img4; }
+
+.galleryPictureN5 {
+  grid-area: img5; }
+
+.galleryPictureN6 {
+  grid-area: img6; }
+
+.galleryPictureN7 {
+  grid-area: img7; }
+
+.galleryPictureN8 {
+  grid-area: img8; }
+
+.tituloGaleriaLunar {
+  text-align: center;
+  width: 100%;
+  display: inline-block; }
+
+.tituloContacto {
+  font-size: 40px;
+  padding-bottom: 20px; }
+
+.formularioContacto {
+  width: 600px;
+  margin: auto; }
+
+@media only screen and (max-width: 480px) {
+  .formularioContacto {
+    max-width: 300px; } }
+
+/* footer*/
+footer {
+  background-image: linear-gradient(to right, grey, black);
+  background-color: grey;
+  height: 50px; }
+
+.containerFooter {
+  display: flex;
+  justify-content: space-between; }
+
+.parrafoFooter {
+  margin: 15px;
+  text-align: left;
+  flex-grow: 1; }
+
+.redes {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px; }
+
+.redesContacto {
+  padding-right: 10px; }
+
+/*Animacion fondo*/
+.icon {
+  color: black;
+  font-size: 60px;
+  opacity: .2;
+  left: 5%;
+  animation: space 4s linear infinite;
+  position: absolute; }
+
+.icon:nth-child(1) {
+  font-size: 50px;
+  left: 5%;
+  animation-duration: 5s; }
+
+.icon:nth-child(2) {
+  font-size: 80px;
+  left: 20%;
+  animation-duration: 4s; }
+
+.icon:nth-child(3) {
+  font-size: 20px;
+  left: 30%;
+  animation-duration: 8s; }
+
+.icon:nth-child(4) {
+  font-size: 100px;
+  left: 55%;
+  animation-duration: 3s; }
+
+.icon:nth-child(5) {
+  font-size: 60px;
+  left: 75%;
+  animation-duration: 10s; }
+
+.icon:nth-child(6) {
+  font-size: 50px;
+  left: 95%;
+  animation-duration: 8s; }
+
+@keyframes space {
+  0% {
+    bottom: 0;
+    opacity: 0; }
+  50% {
+    opacity: .4; }
+  100% {
+    bottom: 100vh;
+    opacity: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .icon:nth-child(4) {
+    display: none; }
+  .icon:nth-child(6) {
+    display: none; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'JetBrains Mono', monospace, sans-serif;
+  background-image: linear-gradient(to bottom, #a19f9f, #a19f9f, white); }
+
+/*map */
+.tituloPrincipal {
+  font-size: 5em; }
+
+.tituloSecundario {
+  font-size: 3em; }
+
+/* blucles */
+p {
+  color: #565668; }
+
+.precio {
+  color: #904c4c; }
+
+/* each */
+.normal {
+  font-size: 15px;
+  font-family: bold; }
+
+.variante {
+  font-size: 20px;
+  font-family: italic; }

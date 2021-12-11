@@ -1,0 +1,51 @@
+/*map */
+$headings: (
+    h1: 5em,
+    h2: 3em,
+    h3: 2em
+);
+$h1: map-get($headings, h1);
+$h2: map-get($headings, h2);
+
+.tituloPrincipal {
+    font-size: $h1;
+}
+.tituloSecundario {
+    font-size: $h2;
+} 
+
+
+/* blucles */
+
+$color: gris;
+$price: rojo;
+
+p{
+    @if ($color == gris){
+        color: rgb(86, 86, 104);
+    } @else if ($color == rojo) {
+        color: red;
+    }
+
+}
+
+.precio {
+    @if ($price == rojo) {
+        color: rgb(144, 76, 76);
+    } @else {
+        color: black;
+    }
+}
+
+
+/* each */
+
+$lista :((normal, bold, 15px),(variante, italic, 20px));
+
+
+@each $var, $style, $size in $lista {
+    .#{$var}{
+        font-size: $size;
+        font-family:  $style;
+    }
+}
